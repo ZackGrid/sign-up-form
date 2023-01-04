@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "yuka";
+    src: url("fonts/webfontkit-20230104-145734/yukarimobil-webfont.woff2") format("woff2"), url("fonts/webfontkit-20230104-145734/yukarimobil-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "open-sans-bold";
+    src: url("fonts/webfontkit-20230104-145734/opensans-bold-webfont.woff2") format("woff2"), url("fonts/webfontkit-20230104-145734/opensans-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    display: flex;
+}
+div.image {
+    position: relative;
+    width: auto;
+    height: 100vh;
+}
+
+.back-img {
+    max-width: auto;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.logo {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 75px;
+    background-color: rgb(1, 8, 14);
+    opacity: 0.5;
+    
+}
+
+.logo-1::before {
+    position: absolute;
+    font: 100px  "yuka", Roboto, sans-serif;
+    content: "Zack";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(233, 239, 241);
+}
