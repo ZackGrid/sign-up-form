@@ -1,5 +1,5 @@
 const backgroundImage = document.querySelector(".back-img");
-const mql = window.matchMedia('(max-width: 600px)');
+const mql = window.matchMedia('(max-width: 1000px)');
 
 function screenTest(e) {
   if (e.matches) {
