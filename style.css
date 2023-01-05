@@ -22,7 +22,7 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(34, 34, 36);
     display: flex;
-    background-color: rgb(233, 239, 241);
+    background-color: rgb(235, 237, 238);
 }
 div.image {
     position: relative;
@@ -104,7 +104,7 @@ fieldset h3 {
 }
 
 button[type="submit"] {
-    margin: 30px 0 0 40px;
+    margin: 30px 0 30px 40px;
     border: none;
     background-image: linear-gradient(rgb(127, 116, 228), rgb(64, 50, 199));
     /* background-color: rgb(64, 50, 199); */
@@ -116,21 +116,84 @@ button[type="submit"] {
     box-shadow: 0px 3px 5px -2px rgb(116, 114, 138);
 }
 
+button[type="submit"]:hover {
+    background-image: linear-gradient(rgb(146, 136, 233), rgb(89, 75, 218));
+}
+
+button[type="submit"]:active {
+    background-image: linear-gradient(rgb(110, 98, 211), rgb(40, 26, 165));
+}
+
 div.inputs {
     display: flex;
     flex-wrap: wrap;
 }
 
 label {
+    font: 10px Arial, sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
     display: block;
-    font-size: 14px;
+    line-height: 1rem;
 }
 
 input {
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
     padding: 3px 5px;
-    border: 1px solid rgb(163, 163, 163);
+    border: 1px solid rgb(207, 207, 207, 0.7);
     border-radius: 3px;
     font-size: 14px;
+}
+
+.have-acc {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.have-acc a:link {
+    color: rgb(64, 50, 199);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.have-acc a:hover {
+    color: rgb(127, 116, 228);
+}
+
+.have-acc a:active {
+    color: rgb(20, 10, 116);
+}
+
+@media only screen and (max-width: 600px) {
+    div.image {
+        position: relative;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .back-img {
+        max-width: 100vw;
+        height: auto;
+        opacity: 0.8;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .credits{
+        top: 93%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .header {
+        margin: 30px 100px 40px 40px;
+    }
+
+    .have-acc {
+        margin-bottom: 40px;
+    }
 }
