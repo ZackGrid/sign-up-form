@@ -107,12 +107,10 @@ button[type="submit"] {
     margin: 30px 0 30px 40px;
     border: none;
     background-image: linear-gradient(rgb(127, 116, 228), rgb(64, 50, 199));
-    /* background-color: rgb(64, 50, 199); */
     padding: 10px 30px;
     border-radius: 5px;
     color: aliceblue;
     font: 12px "open-sans-bold", sans-serif;
-    box-shadow: ;
     box-shadow: 0px 3px 5px -2px rgb(116, 114, 138);
 }
 
@@ -135,6 +133,10 @@ label {
     font-weight: bold;
     display: block;
     line-height: 1rem;
+}
+
+span strong {
+    font-size: 12px;
 }
 
 input {
@@ -163,6 +165,55 @@ input {
 
 .have-acc a:active {
     color: rgb(20, 10, 116);
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+input:focus {
+    outline: rgb(64, 50, 199) solid 1px;
+    box-shadow: 3px 4px 6px -1px rgb(164, 163, 172);
+}
+
+input:focus:valid {
+    outline: green solid 1px;
+    box-shadow: 3px 4px 6px -1px rgb(164, 163, 172);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus:invalid {
+    border: rgb(64, 50, 199) solid 1px;
+    outline: rgb(64, 50, 199) solid 1px;
+    box-shadow: 3px 4px 6px -1px rgb(164, 163, 172);
+}
+
+input[type="tel"]:placeholder-shown:focus {
+    border: rgb(64, 50, 199) solid 1px;
+    outline: rgb(64, 50, 199) solid 1px;
+    box-shadow: 3px 4px 6px -1px rgb(164, 163, 172);
+}
+
+input:placeholder-shown {
+    border: 1px solid rgb(207, 207, 207, 0.7);
+}
+
+input#confirm-pwd:valid {
+    border: 1px solid rgb(207, 207, 207, 0.7);
+}
+input#confirm-pwd:valid:focus {
+    border: rgb(64, 50, 199) solid 1px;
+    outline: rgb(64, 50, 199) solid 1px;
+    box-shadow: 3px 4px 6px -1px rgb(164, 163, 172);
+}
+
+span#message {
+    display: block;
+    min-height: 20px;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 1000px) {

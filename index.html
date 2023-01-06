@@ -29,34 +29,68 @@
                 <h3>Let's do this!</h3>
                 <div class="inputs">
                     <p>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
+                        <label for="first-name">FIRST NAME <span aria-label=""><strong>*</strong></span></label>
+                        <input type="text" 
+                               id="first-name" 
+                               name="first-name"
+                               required
+                               minlength="3"
+                               maxlength="20"
+                               placeholder="Luke">
                     </p>
                     <p>
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" name="last-name">
+                        <label for="last-name">LAST NAME <span aria-label=""><strong>*</strong></span></label>
+                        <input type="text" 
+                               id="last-name" 
+                               name="last-name"
+                               required
+                               minlength="3"
+                               maxlength="25"
+                               placeholder="Skywalker">
                     </p>
                 </div>
                 <div class="inputs">
                     <p>
-                        <label for="Email">EMAIL</label>
-                        <input type="email" id="email" name="email">
+                        <label for="Email">EMAIL <span aria-label=""><strong>*</strong></span></label>
+                        <input type="email" 
+                               id="email" 
+                               name="email"
+                               required
+                               placeholder="jedi@rebellion.com">
                     </p>
                     <p>
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="phone-number">
+                        <input type="tel" 
+                               id="phone-number" 
+                               name="phone-number"
+                               pattern="\d{11}|\d{2}[\s.-]?\d{1}[\s.-]?\d{4}[\s.-]?\d{4}"
+                               placeholder="99 9 9999 9999">
                     </p>
                 </div>
-                <div class="inputs">
+                <div class="inputs password">
                     <p>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="password">
+                        <label for="password">PASSWORD <span aria-label=""><strong>*</strong></span></label>
+                        <input type="password" 
+                               id="password" 
+                               name="password"
+                               minlength="8"
+                               maxlength="12"
+                               required
+                               placeholder="********">
                     </p>
                     <p>
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-pwd" name="confirm-pwd">
+                        <label for="confirm-pwd">CONFIRM PASSWORD <span aria-label=""><strong>*</strong></span></label>
+                        <input type="password" 
+                               id="confirm-pwd" 
+                               name="confirm-pwd"
+                               minlength="8"
+                               maxlength="12"
+                               required
+                               placeholder="********"
+                               onkeyup="check();">
                     </p>
                 </div>
+                <span id="message">8 characters minimum and up to 12 max</span>
                 
             </fieldset>
             
