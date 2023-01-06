@@ -2,6 +2,7 @@
 const backgroundImage = document.querySelector(".back-img");
 const mql = window.matchMedia('(max-width: 1000px)');
 
+//check width of page for use with phones
 function screenTest(e) {
   if (e.matches) {
     /* the viewport is 1000 pixels wide or less */

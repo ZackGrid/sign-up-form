@@ -106,6 +106,7 @@ fieldset h3 {
 button[type="submit"] {
     margin: 30px 0 30px 40px;
     border: none;
+    cursor: pointer;
     background-image: linear-gradient(rgb(127, 116, 228), rgb(64, 50, 199));
     padding: 10px 30px;
     border-radius: 5px;
