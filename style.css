@@ -217,7 +217,7 @@ span#message {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     div.image {
         position: relative;
         width: 100vw;
